@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wk4 Credit Task 2</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="name-list">
+            <h1>{{ header toLocaleUpperCase() }}</h1>
+            <ul>
+                <li v-for="item in item">{{ item }}</li>
+            </ul>
+        </div>
+        <script src="http://unpkg.com/vue"></script>
+        <script>
+            var Namelist = new Vue({
+                el: '#name-list',
+                data {
+                    herder:'name list'
+                    items: [
+                        'Jack' ,
+                        'Rose' ,
+                        'Ben' ,
+                    ]
+                }
+            });
+        </script>
+    </body>
+</html>
